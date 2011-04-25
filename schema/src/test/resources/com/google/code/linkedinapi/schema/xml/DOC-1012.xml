@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mailbox-item>
+	<recipients>
+		<recipient>
+			<person>
+				<id>un0BmXMXOh</id>
+			</person>
+		</recipient>
+	</recipients>
+	<subject>Inviting you to my application.</subject>
+	<body>Hi. I would like to invite you on linked in. LinkedIn is a great professional network.</body>
+	<item-content>
+		<invitation-request>
+			<connect-type>friend</connect-type>
+			<authorization>
+				<name>token</name>
+				<value>ABCDEFGH12445</value>
+			</authorization>
+		</invitation-request>
+	</item-content>
+</mailbox-item>

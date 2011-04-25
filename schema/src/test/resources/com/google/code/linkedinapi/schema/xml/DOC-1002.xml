@@ -1,0 +1,206 @@
+<person>
+	<id>3456B</id>
+	<first-name>Nabeel</first-name>
+	<last-name>Siddiqui</last-name>
+	<headline>I am here.</headline>
+	<location>
+		<name>Karachi</name>
+		<country>
+			<code>PK</code>
+		</country>
+	</location>
+	<industry>Information Technology</industry>
+	<distance>3</distance>
+	<relation-to-viewer>
+		<distance>2</distance>
+	</relation-to-viewer>
+	<num-recommenders>5</num-recommenders>
+	<current-status>Feeling good.</current-status>
+	<current-status-timestamp>1259737200000</current-status-timestamp>
+	<connections total="55" />
+	<summary>All connections.</summary>
+    <public-profile-url>http://www.linkedin.com/in/adnanurooj</public-profile-url>	
+  <interests>AOP, Open Source frameworks, Design Patterns</interests>
+  <associations></associations>
+  <honors>Guest speaker for the software conference.</honors>
+  <specialties>Specialities for guest speaker for the software conference.</specialties>
+	<positions total="2">
+		<position>
+			<id>1234A</id>
+			<title>Software Architect</title>
+			<summary>I was a software architect.</summary>
+			<start-date>
+				<year>2002</year>
+				<month>12</month>
+			</start-date>
+			<is-current>true</is-current>
+			<company>
+				<type>Software House</type>
+				<name>E-dev Technologies</name>
+				<industry>Information Technology</industry>
+			</company>
+		</position>
+		<position>
+			<id>1234B</id>
+			<title>Senior Software Architect</title>
+			<summary>I am a software architect.</summary>
+			<start-date>
+				<year>2003</year>
+				<month>11</month>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+				<month>12</month>
+			</end-date>
+			<is-current>true</is-current>
+			<company>
+				<type>Software Houses</type>
+				<name>Creative Chaos</name>
+				<industry>Software Development</industry>
+			</company>
+		</position>
+	</positions>
+	<three-current-positions total="2">
+		<position>
+			<id>1234A</id>
+			<title>Software Architect</title>
+			<summary>I was a software architect.</summary>
+			<start-date>
+				<year>2002</year>
+				<month>12</month>
+			</start-date>
+			<is-current>true</is-current>
+			<company>
+				<type>Software House</type>
+				<name>E-dev Technologies</name>
+				<industry>Information Technology</industry>
+			</company>
+		</position>
+		<position>
+			<id>1234B</id>
+			<title>Senior Software Architect</title>
+			<summary>I am a software architect.</summary>
+			<start-date>
+				<year>2003</year>
+				<month>11</month>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+				<month>12</month>
+			</end-date>
+			<is-current>true</is-current>
+			<company>
+				<type>Software Houses</type>
+				<name>Creative Chaos</name>
+				<industry>Software Development</industry>
+			</company>
+		</position>
+	</three-current-positions>
+	<three-past-positions total="2">
+		<position>
+			<id>1234A</id>
+			<title>Software Architect</title>
+			<summary>I was a software architect.</summary>
+			<start-date>
+				<year>2002</year>
+				<month>12</month>
+			</start-date>
+			<is-current>true</is-current>
+			<company>
+				<type>Software House</type>
+				<name>E-dev Technologies</name>
+				<industry>Information Technology</industry>
+			</company>
+		</position>
+		<position>
+			<id>1234B</id>
+			<title>Senior Software Architect</title>
+			<summary>I am a software architect.</summary>
+			<start-date>
+				<year>2003</year>
+				<month>11</month>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+				<month>12</month>
+			</end-date>
+			<is-current>true</is-current>
+			<company>
+				<type>Software Houses</type>
+				<name>Creative Chaos</name>
+				<industry>Software Development</industry>
+			</company>
+		</position>
+	</three-past-positions>
+	<educations total="2">
+		<education>
+			<id>7890N</id>
+			<school-name>N.E.D. University</school-name>
+			<degree>B.E. Computer Science</degree>
+			<start-date>
+				<year>1995</year>
+			</start-date>
+			<end-date>
+				<year>2000</year>
+			</end-date>
+		</education>
+		<education>
+			<id>8921N</id>
+			<school-name>FAST NU</school-name>
+			<degree>MS Computer Science</degree>
+			<start-date>
+				<year>1991</year>
+			</start-date>
+			<end-date>
+				<year>1994</year>
+			</end-date>
+		</education>
+	</educations>
+	<member-url-resources>
+		<member-url>
+			<url>http://gapinginfinity.blogspot.com</url>
+			<name>My Blog</name>
+		</member-url>
+		<member-url>
+			<url>http://twitter.com/gapinginfinity</url>
+			<name>Twitter</name>
+		</member-url>
+	</member-url-resources>
+	<api-standard-profile-request>
+		<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name</url>
+	      <headers total="1">
+	        <http-header>
+	          <name>x-li-auth-token</name>
+	          <value>name:5CMz</value>
+	        </http-header>
+	      </headers>
+	</api-standard-profile-request>
+	<site-standard-profile-request>
+		<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name</url>
+	</site-standard-profile-request>
+	<picture-url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name</picture-url>
+  <im-accounts total="1">
+    <im-account>
+      <im-account-type>aim</im-account-type>
+      <im-account-name>nabeelmukhtar</im-account-name>
+    </im-account>
+  </im-accounts>
+  <twitter-accounts total="1">
+    <twitter-account>
+      <provider-account-id>23198636</provider-account-id>
+      <provider-account-name>nabeelmukhtar</provider-account-name>
+    </twitter-account>
+  </twitter-accounts>
+  <date-of-birth>
+    <year>1977</year>
+    <month>3</month>
+    <day>5</day>
+  </date-of-birth>
+  <main-address>A-63, Federal B. Area, Block 9</main-address>
+  <phone-numbers total="1">
+    <phone-number>
+      <phone-type>home</phone-type>
+      <phone-number>6323131</phone-number>
+    </phone-number>
+  </phone-numbers>
+</person>

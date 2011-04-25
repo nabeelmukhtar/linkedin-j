@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="linkedin-j">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="linkedin-j.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/signpost-core-1.2.1.1.jar"/>
+        <pathelement location="lib/commons-codec-1.3.jar"/>
+        <pathelement location="dev-lib/kxml2-2.3.0.jar"/>
+        <pathelement location="dev-lib/junit-4.5.jar"/>
+        <pathelement location="dev-lib/trang.jar"/>
+        <pathelement location="dev-lib/jaxb-xjc.jar"/>
+        <pathelement location="lib/commons-cli-1.2.jar"/>
+    </path>
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+		<classpath refid="linkedin-j.classpath"/>
+	</taskdef>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="schema/src/main/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="schema/src/main/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/main/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/main/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="schema/src/test/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="schema/src/test/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/test/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/test/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/examples/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="cleanall,build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="schema/src/main/java"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="schema/src/main/resources"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/main/java"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/main/resources"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="schema/src/test/java"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="schema/src/test/resources"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/test/java"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/test/resources"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/examples/java"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="AsyncApiExample">
+        <java classname="com.google.code.linkedinapi.client.examples.AsyncApiExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="ConnectionsApiExample">
+        <java classname="com.google.code.linkedinapi.client.examples.ConnectionsApiExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="LinkedInApiDomClientTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.google.code.linkedinapi.client.LinkedInApiDomClientTest" todir="${junit.output.dir}"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </junit>
+    </target>
+    <target name="LinkedInApiJaxbClientTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.google.code.linkedinapi.client.LinkedInApiJaxbClientTest" todir="${junit.output.dir}"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </junit>
+    </target>
+    <target name="MessagingApiExample">
+        <java classname="com.google.code.linkedinapi.client.examples.MessagingApiExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="OAuthAuthenticationExample">
+        <java classname="com.google.code.linkedinapi.client.examples.OAuthAuthenticationExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="PostCommentExample">
+        <java classname="com.google.code.linkedinapi.client.examples.PostCommentExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="PostNetworkUpdateExample">
+        <java classname="com.google.code.linkedinapi.client.examples.PostNetworkUpdateExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="PostStatusExample">
+        <java classname="com.google.code.linkedinapi.client.examples.PostStatusExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="ProfileApiExample">
+        <java classname="com.google.code.linkedinapi.client.examples.ProfileApiExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="SearchApiExample">
+        <java classname="com.google.code.linkedinapi.client.examples.SearchApiExample" failonerror="true" fork="yes">
+            <arg line="-consumerKey TdA4ZuoRgD46-vh8kFF9l0xcs5W3ODBaGdto1OdLv9ujfZiKpq4_KBfT7j-xxxxx -consumerSecret biSbgqH0hSzCvDMDsQyA21AOapiLzUS8Ka11QDraqVGj8kFZJEY1FrqUqYdfxxxx  -token 4edce3d0-76a8-40d0-9e4c-0af2504dxxxx -tokenSecret 24701c95-ac5a-44dc-b4bd-b7c3cc44xxxx"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+    <target name="generate-schema">
+        <java classname="com.thaiopensource.relaxng.translate.Driver" dir="${workspace_loc:linkedin-j/schema/src/test/resources/com/google/code/linkedinapi/schema/xml}" failonerror="true" fork="yes">
+            <arg line="*.xml linkedin-api.xsd"/>
+            <classpath refid="linkedin-j.classpath"/>
+        </java>
+    </target>
+    <target name="generate-schema-classes">
+		<xjc target="src">
+		  <schema dir="src" includes="**/*.xsd" excludes="**/debug.xsd"/>
+		  <arg value="-nv" />
+		</xjc>
+	</target>
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="lib/signpost-core-1.1-SNAPSHOT.jar;dev-lib/jaxb-xjc.jar;dev-lib/trang.jar;lib/commons-codec-1.3.jar;dev-lib/junit-4.5.jar;lib/commons-cli-1.2.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.google.code.linkedinapi.client.oauth,com.google.code.linkedinapi.client.enumeration,com.google.code.linkedinapi.schema.impl,com.google.code.linkedinapi.schema.dom,com.google.code.linkedinapi.client.impl" source="1.6" sourcefiles="schema/src/main/java/com/google/code/linkedinapi/schema/ApiStandardProfileRequest.java,schema/src/main/java/com/google/code/linkedinapi/schema/Update.java,schema/src/main/java/com/google/code/linkedinapi/schema/ItemContent.java,schema/src/main/java/com/google/code/linkedinapi/schema/Error.java,schema/src/main/java/com/google/code/linkedinapi/schema/SchemaElementFactory.java,schema/src/main/java/com/google/code/linkedinapi/schema/ObjectFactory.java,schema/src/main/java/com/google/code/linkedinapi/schema/RelationToViewer.java,schema/src/main/java/com/google/code/linkedinapi/schema/Location.java,schema/src/main/java/com/google/code/linkedinapi/schema/InvitationRequest.java,schema/src/main/java/com/google/code/linkedinapi/schema/Network.java,schema/src/main/java/com/google/code/linkedinapi/schema/SiteStandardProfileRequest.java,schema/src/main/java/com/google/code/linkedinapi/schema/MemberUrlResources.java,schema/src/main/java/com/google/code/linkedinapi/schema/MailboxItem.java,schema/src/main/java/com/google/code/linkedinapi/schema/UpdateComments.java,schema/src/main/java/com/google/code/linkedinapi/schema/Positions.java,schema/src/main/java/com/google/code/linkedinapi/schema/Position.java,schema/src/main/java/com/google/code/linkedinapi/schema/Headers.java,schema/src/main/java/com/google/code/linkedinapi/schema/Company.java,core/src/main/java/com/google/code/linkedinapi/client/LinkedInAuthenticationClient.java,schema/src/main/java/com/google/code/linkedinapi/schema/UpdateContent.java,schema/src/main/java/com/google/code/linkedinapi/schema/Authorization.java,core/src/main/java/com/google/code/linkedinapi/client/LinkedInApiClient.java,schema/src/main/java/com/google/code/linkedinapi/schema/Adapter2.java,schema/src/main/java/com/google/code/linkedinapi/schema/Educations.java,schema/src/main/java/com/google/code/linkedinapi/schema/Recipients.java,schema/src/main/java/com/google/code/linkedinapi/schema/Person.java,core/src/main/java/com/google/code/linkedinapi/client/AsyncLinkedInApiClient.java,schema/src/main/java/com/google/code/linkedinapi/schema/Property.java,schema/src/main/java/com/google/code/linkedinapi/schema/UpdateComment.java,schema/src/main/java/com/google/code/linkedinapi/schema/NetworkStats.java,schema/src/main/java/com/google/code/linkedinapi/schema/NetworkUpdateContentType.java,schema/src/main/java/com/google/code/linkedinapi/schema/Education.java,schema/src/main/java/com/google/code/linkedinapi/schema/Connections.java,schema/src/main/java/com/google/code/linkedinapi/schema/SchemaEntity.java,core/src/main/java/com/google/code/linkedinapi/client/constant/ApplicationConstants.java,schema/src/main/java/com/google/code/linkedinapi/schema/EndDate.java,core/src/main/java/com/google/code/linkedinapi/client/LinkedInApiClientException.java,schema/src/main/java/com/google/code/linkedinapi/schema/MemberUrl.java,schema/src/main/java/com/google/code/linkedinapi/schema/People.java,schema/src/main/java/com/google/code/linkedinapi/schema/Country.java,schema/src/main/java/com/google/code/linkedinapi/schema/Recipient.java,schema/src/main/java/com/google/code/linkedinapi/schema/Activity.java,schema/src/main/java/com/google/code/linkedinapi/schema/StartDate.java,schema/src/main/java/com/google/code/linkedinapi/schema/HttpHeader.java,core/src/main/java/com/google/code/linkedinapi/client/LinkedInApiClientFactory.java,schema/src/main/java/com/google/code/linkedinapi/schema/Adapter1.java,schema/src/main/java/com/google/code/linkedinapi/schema/NetworkUpdateReturnType.java,schema/src/main/java/com/google/code/linkedinapi/schema/Updates.java,schema/src/main/java/com/google/code/linkedinapi/schema/InviteConnectType.java,core/src/main/java/com/google/code/linkedinapi/client/constant/LinkedInApiUrls.java" sourcepath="schema/src/test/resources;core/src/main/java;schema/src/main/resources;core/src/test/java;schema/src/test/java;core/src/test/resources;core/src/examples/java;core/src/main/resources;schema/src/main/java" splitindex="true" use="true" version="true"/>
+    </target>
+    <target name="jar" depends="build" description="Create jar">
+		<jar jarfile="dist/linkedin-j.jar" basedir="bin" manifest="./manifest.mf"/>
+    </target>
+    <target name="archive" depends="jar, javadoc" description="Create project archive">
+		<jar jarfile="linkedin-j-0.1-SNAPSHOT.zip" basedir="."/>
+    </target>
+</project>

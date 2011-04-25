@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+	<associations>Kiwanis, IEEE, Product Marketing Association</associations>
+	<main-address>A-63, Federal B. Area, Block 9</main-address>
+	<honors>Who's Who In America, 1999-2004</honors>
+	<last-name>Test</last-name>
+	<num-connections-capped>false</num-connections-capped>
+	<distance>0</distance>
+	<headline>Software Developer at Api Test Company</headline>
+	<date-of-birth>
+		<year>1977</year>
+		<month>3</month>
+		<day>5</day>
+	</date-of-birth>
+	<languages total="3">
+		<language>
+			<id>2</id>
+			<language>
+				<name>English</name>
+			</language>
+			<proficiency>
+				<level>elementary</level>
+				<name>Elementary proficiency</name>
+			</proficiency>
+		</language>
+		<language>
+			<id>3</id>
+			<language>
+				<name>French</name>
+			</language>
+			<proficiency>
+				<level>limited-working</level>
+				<name>Limited working proficiency</name>
+			</proficiency>
+		</language>
+		<language>
+			<id>4</id>
+			<language>
+				<name>German</name>
+			</language>
+			<proficiency>
+				<level>professional-working</level>
+				<name>Professional working proficiency</name>
+			</proficiency>
+		</language>
+	</languages>
+	<industry>Research</industry>
+	<id>3LyiBVeJz0</id>
+	<num-connections>1</num-connections>
+	<phone-numbers total="1">
+		<phone-number>
+			<phone-type>home</phone-type>
+			<phone-number>6323131</phone-number>
+		</phone-number>
+	</phone-numbers>
+	<current-status>This is a test share update from linkedin-j API client. http://www.google.com</current-status>
+	<summary>This is a test summary..</summary>
+	<public-profile-url>http://www.linkedin.com/pub/api-test/18/404/981</public-profile-url>
+	<num-recommenders>1</num-recommenders>
+	<certifications total="2">
+		<certification>
+			<id>1</id>
+			<name>SCEA</name>
+			<authority>
+				<name>Oracle Corp.</name>
+			</authority>
+			<number>123,456</number>
+			<start-date>
+				<year>2003</year>
+				<month>3</month>
+				<day>3</day>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+				<month>5</month>
+				<day>3</day>
+			</end-date>
+		</certification>
+		<certification>
+			<id>5</id>
+			<name>Hadoop Developer</name>
+			<authority>
+				<name>IBM Corp.</name>
+			</authority>
+			<number>123,446</number>
+			<start-date>
+				<year>2008</year>
+				<month>3</month>
+				<day>3</day>
+			</start-date>
+			<end-date>
+				<year>2002</year>
+				<month>5</month>
+				<day>3</day>
+			</end-date>
+		</certification>
+	</certifications>
+	<positions total="2">
+		<position>
+			<id>99827359</id>
+			<title>Software Developer</title>
+			<is-current>true</is-current>
+			<company>
+				<name>Api Test Company</name>
+				<type>public</type>
+				<size>100</size>
+				<industry>Research</industry>
+				<ticker>ATC</ticker>
+			</company>
+		</position>
+		<position>
+			<id>134130818</id>
+			<title>Software Developer</title>
+			<summary/>
+			<start-date>
+				<year>2003</year>
+				<month>3</month>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+				<month>5</month>
+			</end-date>
+			<is-current>false</is-current>
+			<company>
+				<name>API Develop Company</name>
+				<industry>Research</industry>
+			</company>
+		</position>
+	</positions>
+	<first-name>Api</first-name>
+	<skills total="4">
+		<skill>
+			<id>10</id>
+			<skill>
+				<name>Java</name>
+			</skill>
+			<proficiency>
+				<level>beginner</level>
+				<name>Beginner</name>
+			</proficiency>
+			<years>
+				<id>10</id>
+				<name>10+</name>
+			</years>
+		</skill>
+		<skill>
+			<id>11</id>
+			<skill>
+				<name>C++</name>
+			</skill>
+			<proficiency>
+				<level>intermediate</level>
+				<name>Intermediate</name>
+			</proficiency>
+			<years>
+				<id>20</id>
+				<name>20+</name>
+			</years>
+		</skill>
+		<skill>
+			<id>12</id>
+			<skill>
+				<name>Python</name>
+			</skill>
+		</skill>
+		<skill>
+			<id>13</id>
+			<skill>
+				<name>Hibernate</name>
+			</skill>
+		</skill>
+	</skills>
+	<current-status-timestamp>1292256180000</current-status-timestamp>
+	<patents total="2">
+		<patent>
+			<id>6</id>
+			<title>A test patent</title>
+			<date>
+				<year>1987</year>
+				<month>3</month>
+				<day>26</day>
+			</date>
+			<url>http://www.nab-had.com</url>
+			<summary>Hadoop Tutorial Summary</summary>
+			<number>7,720,722</number>
+			<status>
+				<id>id56757</id>
+				<name>Patent</name>
+			</status>
+			<office>
+				<name>USPTO</name>
+			</office>
+	      <inventors total="2">
+	        <inventor>
+				<id>id1234</id>
+				<name>Nabeel Mukhtar</name>
+				<person>
+					<id>EDgfANrAzD</id>
+					<first-name>Nabeel</first-name>
+					<last-name>Siddiqui</last-name>
+					<headline>Software Engineer at Creative Chaos</headline>
+					<location>
+						<name>Pakistan</name>
+						<country>
+							<code>pk</code>
+						</country>
+					</location>
+					<industry>Computer Software</industry>
+					<api-standard-profile-request>
+						<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+						<headers total="1">
+							<http-header>
+								<name>x-li-auth-token</name>
+								<value>name:Epxm</value>
+							</http-header>
+						</headers>
+					</api-standard-profile-request>
+					<site-standard-profile-request>
+						<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+					</site-standard-profile-request>
+				</person>
+			</inventor>
+	        <inventor>
+				<id>id12345</id>
+				<name>Fazeel Mukhtar</name>
+				<person>
+					<id>EDgfANrSzD</id>
+					<first-name>Nabeel</first-name>
+					<last-name>Siddiqui</last-name>
+					<headline>Software Engineer at Creative Chaos</headline>
+					<location>
+						<name>Pakistan</name>
+						<country>
+							<code>pk</code>
+						</country>
+					</location>
+					<industry>Computer Software</industry>
+					<api-standard-profile-request>
+						<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+						<headers total="1">
+							<http-header>
+								<name>x-li-auth-token</name>
+								<value>name:Epxm</value>
+							</http-header>
+						</headers>
+					</api-standard-profile-request>
+					<site-standard-profile-request>
+						<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+					</site-standard-profile-request>
+				</person>
+			</inventor>
+		</inventors>
+		</patent>
+		<patent>
+			<id>16</id>
+			<title>Another test patent</title>
+			<date>
+				<year>1984</year>
+				<month>2</month>
+				<day>27</day>
+			</date>
+			<url>http://www.nab-hkl.com</url>
+			<summary>Hadoop Tutorial Saummary</summary>
+			<number>7,7230,722</number>
+			<status>
+				<id>id56757</id>
+				<name>Application</name>
+			</status>
+			<office>
+				<name>USPTO</name>
+			</office>
+	      <inventors total="2">
+	        <inventor>
+				<id>id1234</id>
+				<name>Nabeel Mukhtar</name>
+				<person>
+					<id>EDgfANrAzD</id>
+					<first-name>Nabeel</first-name>
+					<last-name>Siddiqui</last-name>
+					<headline>Software Engineer at Creative Chaos</headline>
+					<location>
+						<name>Pakistan</name>
+						<country>
+							<code>pk</code>
+						</country>
+					</location>
+					<industry>Computer Software</industry>
+					<api-standard-profile-request>
+						<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+						<headers total="1">
+							<http-header>
+								<name>x-li-auth-token</name>
+								<value>name:Epxm</value>
+							</http-header>
+						</headers>
+					</api-standard-profile-request>
+					<site-standard-profile-request>
+						<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+					</site-standard-profile-request>
+				</person>
+			</inventor>
+	        <inventor>
+				<id>id12345</id>
+				<name>Fazeel Mukhtar</name>
+				<person>
+					<id>EDgfANrSzD</id>
+					<first-name>Nabeel</first-name>
+					<last-name>Siddiqui</last-name>
+					<headline>Software Engineer at Creative Chaos</headline>
+					<location>
+						<name>Pakistan</name>
+						<country>
+							<code>pk</code>
+						</country>
+					</location>
+					<industry>Computer Software</industry>
+					<api-standard-profile-request>
+						<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+						<headers total="1">
+							<http-header>
+								<name>x-li-auth-token</name>
+								<value>name:Epxm</value>
+							</http-header>
+						</headers>
+					</api-standard-profile-request>
+					<site-standard-profile-request>
+						<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+					</site-standard-profile-request>
+				</person>
+			</inventor>
+		</inventors>
+		</patent>
+	</patents>
+	<twitter-accounts total="1">
+		<twitter-account>
+			<provider-account-id>23198636</provider-account-id>
+			<provider-account-name>nabeelmukhtar</provider-account-name>
+		</twitter-account>
+	</twitter-accounts>
+	<im-accounts total="1">
+		<im-account>
+			<im-account-type>aim</im-account-type>
+			<im-account-name>nabeelmukhtar</im-account-name>
+		</im-account>
+	</im-accounts>
+	<specialties>Java, C++, Python, Hadoop</specialties>
+	<three-current-positions total="1">
+		<position>
+			<id>99827359</id>
+			<title>Software Developer</title>
+			<is-current>true</is-current>
+			<company>
+				<name>Api Test Company</name>
+				<industry>Research</industry>
+			</company>
+		</position>
+	</three-current-positions>
+	<publications total="2">
+		<publication>
+			<id>8</id>
+			<title>Hadoop Tutorial</title>
+			<date>
+				<year>1986</year>
+				<month>3</month>
+				<day>26</day>
+			</date>
+			<publisher>
+				<name>Nabeel Mukhtar</name>
+			</publisher>>
+			<url>http://www.nab-had.com</url>
+			<summary>Hadoop Tutorial Summary</summary>
+	      <authors total="2">
+	        <author>
+				<id>id1234</id>
+				<name>Nabeel Mukhtar</name>
+				<person>
+					<id>EDgfANrAzD</id>
+					<first-name>Nabeel</first-name>
+					<last-name>Siddiqui</last-name>
+					<headline>Software Engineer at Creative Chaos</headline>
+					<location>
+						<name>Pakistan</name>
+						<country>
+							<code>pk</code>
+						</country>
+					</location>
+					<industry>Computer Software</industry>
+					<api-standard-profile-request>
+						<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+						<headers total="1">
+							<http-header>
+								<name>x-li-auth-token</name>
+								<value>name:Epxm</value>
+							</http-header>
+						</headers>
+					</api-standard-profile-request>
+					<site-standard-profile-request>
+						<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+					</site-standard-profile-request>
+				</person>
+			</author>
+	        <author>
+				<id>id12345</id>
+				<name>Nabeel Mukhtar</name>
+				<person>
+					<id>EDgfANrAzD</id>
+					<first-name>Nabeel</first-name>
+					<last-name>Siddiqui</last-name>
+					<headline>Software Engineer at Creative Chaos</headline>
+					<location>
+						<name>Pakistan</name>
+						<country>
+							<code>pk</code>
+						</country>
+					</location>
+					<industry>Computer Software</industry>
+					<api-standard-profile-request>
+						<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+						<headers total="1">
+							<http-header>
+								<name>x-li-auth-token</name>
+								<value>name:Epxm</value>
+							</http-header>
+						</headers>
+					</api-standard-profile-request>
+					<site-standard-profile-request>
+						<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+					</site-standard-profile-request>
+				</person>
+			</author>
+		</authors>
+		</publication>
+		<publication>
+			<id>14</id>
+			<title>Mahout Tytorial</title>
+			<date>
+				<year>2011</year>
+				<month>1</month>
+				<day>1</day>
+			</date>
+		</publication>
+	</publications>
+	<three-past-positions total="1">
+		<position>
+			<id>134130818</id>
+			<title>Software Developer</title>
+			<summary/>
+			<start-date>
+				<year>2003</year>
+				<month>3</month>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+				<month>5</month>
+			</end-date>
+			<is-current>false</is-current>
+			<company>
+				<name>API Develop Company</name>
+				<industry>Research</industry>
+			</company>
+		</position>
+	</three-past-positions>
+	<connections total="1">
+		<person>
+			<id>EDgfANrAzD</id>
+			<first-name>Nabeel</first-name>
+			<last-name>Siddiqui</last-name>
+			<headline>Software Engineer at Creative Chaos</headline>
+			<location>
+				<name>Pakistan</name>
+				<country>
+					<code>pk</code>
+				</country>
+			</location>
+			<industry>Computer Software</industry>
+			<api-standard-profile-request>
+				<url>http://api.linkedin.com/v1/people/EDgfANrAzD</url>
+				<headers total="1">
+					<http-header>
+						<name>x-li-auth-token</name>
+						<value>name:Epxm</value>
+					</http-header>
+				</headers>
+			</api-standard-profile-request>
+			<site-standard-profile-request>
+				<url>http://www.linkedin.com/profile?viewProfile=&amp;key=48356646&amp;authToken=Epxm&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+			</site-standard-profile-request>
+		</person>
+	</connections>
+	<interests>management training, new technology, investing, fishing, snowboarding</interests>
+	<educations total="1">
+		<education>
+			<id>53409423</id>
+			<school-name>Aga Khan University</school-name>
+			<notes>No notes.</notes>
+			<activities>No Activities</activities>
+			<degree>BSc</degree>
+			<field-of-study>Computer Science</field-of-study>
+			<start-date>
+				<year>2001</year>
+			</start-date>
+			<end-date>
+				<year>2005</year>
+			</end-date>
+		</education>
+	</educations>
+	<recommendations-received total="3">
+		<recommendation>
+			<id>20333203</id>
+			<recommendation-type>
+				<code>service-provider</code>
+			</recommendation-type>
+			<recommendation-text>I recommend you as a service provider.</recommendation-text>
+			<recommender>
+				<id>EDgfANrAzD</id>
+				<first-name>Nabeel</first-name>
+				<last-name>Siddiqui</last-name>
+			</recommender>
+		</recommendation>
+		<recommendation>
+			<id>20333121</id>
+			<recommendation-type>
+				<code>education</code>
+			</recommendation-type>
+			<recommendation-text>I recommend his education.</recommendation-text>
+			<recommender>
+				<id>EDgfANrAzD</id>
+				<first-name>Nabeel</first-name>
+				<last-name>Siddiqui</last-name>
+			</recommender>
+		</recommendation>
+		<recommendation>
+			<id>15384198</id>
+			<recommendation-type>
+				<code>colleague</code>
+			</recommendation-type>
+			<recommendation-text>I recommend your work for testing..</recommendation-text>
+			<recommender>
+				<id>EDgfANrAzD</id>
+				<first-name>Nabeel</first-name>
+				<last-name>Siddiqui</last-name>
+			</recommender>
+		</recommendation>
+	</recommendations-received>
+	<relation-to-viewer>
+		<distance>0</distance>
+	</relation-to-viewer>
+	<location>
+		<name>Pakistan</name>
+		<country>
+			<code>pk</code>
+		</country>
+	</location>
+	<site-standard-profile-request>
+		<url>http://www.linkedin.com/profile?viewProfile=&amp;key=60723313&amp;authToken=KMAi&amp;authType=name&amp;trk=api*a101220*s101220*</url>
+	</site-standard-profile-request>
+	<member-url-resources total="3">
+		<member-url>
+			<name>Personal Website</name>
+			<url>http://www.nabeel.com</url>
+		</member-url>
+		<member-url>
+			<name>Company Website</name>
+			<url>http://www.csquareonline.com</url>
+		</member-url>
+		<member-url>
+			<name>Blog</name>
+			<url>http://www.twitter.com</url>
+		</member-url>
+	</member-url-resources>
+	<api-standard-profile-request>
+		<url>http://api.linkedin.com/v1/people/3LyiBVeJz0</url>
+		<headers total="1">
+			<http-header>
+				<name>x-li-auth-token</name>
+				<value>name:KMAi</value>
+			</http-header>
+		</headers>
+	</api-standard-profile-request>
+</person>

@@ -1,0 +1,199 @@
+<bindings version="2.0" xmlns="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    extensionBindingPrefixes="xjc"
+    schemaLocation="linkedin-api-schema.xsd" node="/xs:schema">
+	<globalBindings localScoping="toplevel" generateValueClass="false">
+		<javaType name="double" xmlType="xs:double"/>
+		<javaType name="long" xmlType="xs:integer"/>
+		<xjc:superInterface name="SchemaEntity"/>
+		<!-- <xjc:superClass name="BaseSchemaEntity"/> -->
+		<xjc:serializable uid="2461660169443089969"/>
+	</globalBindings>
+    <schemaBindings>
+      <package name="com.google.code.linkedinapi.schema" />
+    </schemaBindings>
+	<bindings node="//xs:element[@name='content-type']/xs:simpleType">
+		<typesafeEnumClass name="NetworkUpdateContentType">
+			<typesafeEnumMember name="LINKED_IN_HTML" value="linkedin-html"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='connect-type']/xs:simpleType">
+		<typesafeEnumClass name="InviteConnectType" >
+			<typesafeEnumMember name="FRIEND" value="friend"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='update-type']/xs:simpleType">
+		<typesafeEnumClass name="NetworkUpdateReturnType">
+			<typesafeEnumMember name="ANSWER_UPDATE" value="ANSW"/>
+			<typesafeEnumMember name="APPLICATION_CONNECTION_UPDATE" value="APPM"/>
+			<typesafeEnumMember name="APPLICATION_TO_MEMBER_UPDATE" value="APPS"/>
+			<typesafeEnumMember name="CONNECTION_ADDED_CONNECTIONS" value="CONN"/>
+			<typesafeEnumMember name="NEW_CONNECTIONS" value="NCON"/>
+			<typesafeEnumMember name="CONTACT_JOINED" value="CCEM"/>
+			<typesafeEnumMember name="JOB_POSTED" value="JOBP"/>
+			<typesafeEnumMember name="CONNECTION_JOINED_GROUP" value="JGRP"/>
+			<typesafeEnumMember name="CONNECTION_UPDATED_PICTURE" value="PICU"/>
+			<typesafeEnumMember name="CONNECTION_RECOMMENDED" value="PREC"/>
+			<typesafeEnumMember name="CONNECTION_UPDATED_PROFILE" value="PROF"/>
+			<typesafeEnumMember name="QUESTION_UPDATED" value="QSTN"/>
+			<typesafeEnumMember name="STATUS_UPDATED" value="STAT"/>
+			<typesafeEnumMember name="SHARED_ITEM" value="SHAR"/>
+			<typesafeEnumMember name="EXTENDED_PROFILE_UPDATED" value="PRFX"/>
+			<typesafeEnumMember name="COMPANY_UPDATED" value="CMPY"/>
+			<typesafeEnumMember name="VIRAL_UPDATE" value="VIRL"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='recommendation-type']/xs:complexType/xs:sequence/xs:element[@name='code']/xs:simpleType">
+		<typesafeEnumClass name="RecommendationCode">
+			<typesafeEnumMember name="COLLEAGUE" value="colleague"/>
+			<typesafeEnumMember name="BUSINESS_PARTNER" value="business-partner"/>
+			<typesafeEnumMember name="SERVICE_PROVIDER" value="service-provider"/>
+			<typesafeEnumMember name="EDUCATION" value="education"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='im-account-type']/xs:simpleType">
+		<typesafeEnumClass name="ImAccountType">
+			<typesafeEnumMember name="AIM" value="aim"/>
+			<typesafeEnumMember name="GTALK" value="gtalk"/>
+			<typesafeEnumMember name="ICQ" value="icq"/>
+			<typesafeEnumMember name="MSN" value="msn"/>
+			<typesafeEnumMember name="SKYPE" value="skype"/>
+			<typesafeEnumMember name="YAHOO" value="yahoo"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='phone-type']/xs:simpleType">
+		<typesafeEnumClass name="PhoneType">
+			<typesafeEnumMember name="HOME" value="home"/>
+			<typesafeEnumMember name="WORK" value="work"/>
+			<typesafeEnumMember name="MOBILE" value="mobile"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='level']/xs:simpleType">
+		<typesafeEnumClass name="ProficiencyLevelType">
+			<typesafeEnumMember name="ELEMENTARY" value="elementary"/>
+			<typesafeEnumMember name="LIMITED_WORKING" value="limited_working"/>
+			<typesafeEnumMember name="PROFESSIONAL_WORKING" value="professional_working"/>
+			<typesafeEnumMember name="FULL_PROFESSIONAL" value="full_professional"/>
+			<typesafeEnumMember name="NATIVE_BILINGUAL" value="native_or_bilingual"/>
+			<typesafeEnumMember name="BEGINNER" value="beginner"/>
+			<typesafeEnumMember name="INTERMEDIATE" value="intermediate"/>
+			<typesafeEnumMember name="ADVANCED" value="advanced"/>
+			<typesafeEnumMember name="EXPERT" value="expert"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='facet']/xs:complexType/xs:sequence/xs:element[@name='code']/xs:simpleType">
+		<typesafeEnumClass name="FacetType">
+			<typesafeEnumMember name="LOCATION" value="location"/>
+			<typesafeEnumMember name="INDUSTRY" value="industry"/>
+			<typesafeEnumMember name="NETWORK" value="network"/>
+			<typesafeEnumMember name="LANGUAGE" value="language"/>
+			<typesafeEnumMember name="CURRENT_COMPANY" value="current-company"/>
+			<typesafeEnumMember name="PAST_COMPANY" value="past-company"/>
+			<typesafeEnumMember name="SCHOOL" value="school"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='visibility']/xs:complexType/xs:sequence/xs:element[@name='code']/xs:simpleType">
+		<typesafeEnumClass name="VisibilityType">
+			<typesafeEnumMember name="ANYONE" value="anyone"/>
+			<typesafeEnumMember name="ALL_MEMBERS" value="all-members"/>
+			<typesafeEnumMember name="CONNECTIONS_ONLY" value="connections-only"/>
+		</typesafeEnumClass>
+	</bindings>
+	<bindings node="//xs:element[@name='updates']/xs:complexType/xs:sequence/xs:element[@ref='update']">
+		<property name="updateList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='recipients']/xs:complexType/xs:sequence/xs:element[@ref='recipient']">
+		<property name="recipientList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='network-stats']/xs:complexType/xs:sequence/xs:element[@ref='property']">
+		<property name="propertyList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='question-categories']/xs:complexType/xs:sequence/xs:element[@ref='question-category']">
+		<property name="questionCategoryList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='answers']/xs:complexType/xs:sequence/xs:element[@ref='answer']">
+		<property name="answerList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='update-comments']/xs:complexType/xs:sequence/xs:element[@ref='update-comment']">
+		<property name="updateCommentList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='people']/xs:complexType/xs:sequence/xs:element[@ref='person']">
+		<property name="personList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='positions']/xs:complexType/xs:sequence/xs:element[@ref='position']">
+		<property name="positionList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='three-current-positions']/xs:complexType/xs:sequence/xs:element[@ref='position']">
+		<property name="positionList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='three-past-positions']/xs:complexType/xs:sequence/xs:element[@ref='position']">
+		<property name="positionList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='educations']/xs:complexType/xs:sequence/xs:element[@ref='education']">
+		<property name="educationList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='member-groups']/xs:complexType/xs:sequence/xs:element[@ref='member-group']">
+		<property name="memberGroupList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='person-activities']/xs:complexType/xs:sequence/xs:element[@ref='activity']">
+		<property name="activityList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='recommendations-given']/xs:complexType/xs:sequence/xs:element[@ref='recommendation']">
+		<property name="recommendationList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='recommendations-received']/xs:complexType/xs:sequence/xs:element[@ref='recommendation']">
+		<property name="recommendationList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='connections']/xs:complexType/xs:sequence/xs:element[@ref='person']">
+		<property name="personList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='headers']/xs:complexType/xs:sequence/xs:element[@ref='http-header']">
+		<property name="httpHeaderList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='im-accounts']/xs:complexType/xs:sequence/xs:element[@ref='im-account']">
+		<property name="imAccountList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='twitter-accounts']/xs:complexType/xs:sequence/xs:element[@ref='twitter-account']">
+		<property name="twitterAccountList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='phone-numbers']/xs:complexType/xs:sequence/xs:element[@ref='phone-number']">
+		<property name="phoneNumberList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='member-url-resources']/xs:complexType/xs:sequence/xs:element[@ref='member-url']">
+		<property name="memberUrlList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='facets']/xs:complexType/xs:sequence/xs:element[@ref='facet']">
+		<property name="facetList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='buckets']/xs:complexType/xs:sequence/xs:element[@ref='bucket']">
+		<property name="bucketList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='likes']/xs:complexType/xs:sequence/xs:element[@ref='like']">
+		<property name="likeList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='certifications']/xs:complexType/xs:sequence/xs:element[@ref='certification']">
+		<property name="certificationList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='patents']/xs:complexType/xs:sequence/xs:element[@ref='patent']">
+		<property name="patentList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='publications']/xs:complexType/xs:sequence/xs:element[@ref='publication']">
+		<property name="publicationList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='skills']/xs:complexType/xs:sequence/xs:element[@ref='skill']">
+		<property name="skillList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='languages']/xs:complexType/xs:sequence/xs:element[@ref='language']">
+		<property name="languageList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='inventors']/xs:complexType/xs:sequence/xs:element[@ref='inventor']">
+		<property name="inventorList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='authors']/xs:complexType/xs:sequence/xs:element[@name='author']">
+		<property name="authorList"/>
+	</bindings>
+	<bindings node="//xs:element[@name='related-connections']/xs:complexType/xs:sequence/xs:element[@ref='person']">
+		<property name="personList"/>
+	</bindings>
+</bindings>

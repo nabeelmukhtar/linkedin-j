@@ -1,0 +1,10 @@
+com.google.code.linkedinapi.client
+com.google.code.linkedinapi.client.constant
+com.google.code.linkedinapi.client.enumeration
+com.google.code.linkedinapi.client.examples
+com.google.code.linkedinapi.client.impl
+com.google.code.linkedinapi.client.oauth
+com.google.code.linkedinapi.schema
+com.google.code.linkedinapi.schema.impl
+com.google.code.linkedinapi.schema.xml
+com.google.code.linkedinapi.schema.xpp
